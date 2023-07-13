@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="329.0" prefWidth="411.0">
+      <children>
+         <AnchorPane layoutX="-2.0" prefHeight="330.0" prefWidth="413.0">
+            <children>
+               <TextField fx:id="searchBar" layoutX="123.0" layoutY="14.0" prefHeight="26.0" prefWidth="279.0" />
+               <Label layoutX="14.0" layoutY="14.0" text="Search for a Task:">
+                  <font>
+                     <Font name="Al Bayan Plain" size="13.0" />
+                  </font>
+               </Label>
+               <ScrollPane layoutY="60.0" prefHeight="270.0" prefWidth="413.0">
+                 <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="380.0">
+                        <children>
+                           <VBox fx:id="searchResults" prefHeight="2000.0" prefWidth="380.0" />
+                        </children>
+                     </AnchorPane>
+                 </content>
+               </ScrollPane>
+            </children>
+         </AnchorPane>
+         <ImageView accessibleRole="BUTTON" blendMode="GREEN" fitHeight="330.0" fitWidth="239.0" mouseTransparent="true" opacity="0.13" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/background.jpg" />
+            </image>
+         </ImageView>
+         <ImageView accessibleRole="BUTTON" blendMode="GREEN" fitHeight="330.0" fitWidth="239.0" layoutX="93.0" mouseTransparent="true" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/background.jpg" />
+            </image>
+         </ImageView>
+         <ImageView accessibleRole="BUTTON" blendMode="GREEN" fitHeight="334.0" fitWidth="191.0" layoutX="223.0" layoutY="-2.0" mouseTransparent="true" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/background.jpg" />
+            </image>
+         </ImageView>
+      </children></AnchorPane>
+</Scene>
